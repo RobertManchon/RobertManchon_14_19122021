@@ -1,26 +1,27 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from 'components/Header/Header';
+import GlobalState from 'context/GlobalState';
+import Nav from 'components/Nav/Nav';
 import React from 'react';
 import { routes } from 'router/routes';
 
 const App = () => {
-    return (
-        <Router>
-            <div className="router-container">
-                <Header />
-                <Switch>
-                    {routes.map((route, i) => (
-                        <Route
-                            key={i}
-                            path={route.path}
-                            exact={route.exact}
-                            component={route.component}
-                        />
-                    ))}
-                </Switch>
-            </div>
-        </Router>
-    );
-}
+  return (
+    <GlobalState>
+      <Router>
+          <Nav />
+            <Switch>
+              {routes.map((route, i) => (
+                <Route
+                  key={i}
+                  path={route.path}
+                  exact={route.exact}
+                  component={route.component}
+                />
+              ))}
+            </Switch>
+      </Router>
+    </GlobalState>
+  );
+};
 
 export default App;
