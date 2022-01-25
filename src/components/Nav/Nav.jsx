@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import MainNavBar from 'components/MainNavBar/MainNavBar';
-import SideNavBar from 'components/SideNavBar/SideNavBar';
+import MainNavBar from './../../components/MainNavBar/MainNavBar';
+import SideNavBar from './../../components/SideNavBar/SideNavBar';
 
 const Nav = () => {
     const [displaySideMenu, setDisplaySideMenu] = useState(false);

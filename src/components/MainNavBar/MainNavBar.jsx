@@ -1,11 +1,11 @@
-import 'components/MainNavBar/MainNavBar.css'; 
+import './MainNavBar.css';
 import { FaComments, FaCompress, FaBell, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logo from 'assets/logo.png';
+import logo from './../../assets/logo.png';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const MainNavBar = props => {    
+const MainNavBar = (props) => {
     return (
         <header className='header'>
             <nav className='mainNavBar'>
@@ -23,7 +23,7 @@ const MainNavBar = props => {
                     <li className='navBarRightItem'>
                         <div className='navBarRightLink'>
                             <FaBell className='navBarIcon'/>
-                            <span className='badgeNotif'>15</span>
+                            <span className='badgeNotif'>2</span>
                         </div>
                     </li>
                     <li className='navBarRightItem'>

@@ -1,17 +1,17 @@
-import CreateEmployee from 'pages/CreateEmployee/CreateEmployee';
-import CurrentEmployee from 'pages/CurrentEmployee/CurrentEmployee';
-import Error from 'pages/Error/Error';
+import NewEmployee from './../pages/NewEmployee';
+import EmployeeList from '../pages/EmployeeList/EmployeeList';
+import Error from './../pages/Error/Error';
 
 export const routes = [
     {
         path: '/',
         exact: true,
-        component: CreateEmployee
+        component: NewEmployee
     },
     {
         path: '/employee-list',
         exact: true,
-        component: CurrentEmployee
+        component: EmployeeList
     },
     {
         path: '*',

@@ -1,12 +1,12 @@
-import 'components/SideNavBar/SideNavBar.css';
+import './SideNavBar.css';
 import { FaUserPlus, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logoDark from 'assets/logoDark.png';
+import logoDark from './../../assets/logoDark.png';
 import PropTypes from 'prop-types';
 import React from 'react';
-import user from 'assets/user.png';
+import user from './../../assets/user.png';
 
-const SideNavBar = props => {
+const SideNavBar = (props) => {
     return (
         <div className={`sideBarOverlay ${props.showSideBar ? 'showOverlay' : 'hideOverlay'} `} onClick={props.toggle}>
             <aside className={`sideBar ${props.showSideBar ? 'showSideBar' : 'hideSideBar'} `} onClick={(e) => e.stopPropagation()}>
@@ -37,7 +37,7 @@ const SideNavBar = props => {
                     </ul>
                 </nav>
                 <section className='sideNavBarFooter'> 
-                    <h2>HRNet © 2021</h2>
+                    <h2>HRNet © 2022</h2>
                     <p>All right reserved.</p>
                     <Link to='/' className='privacyPolicy'>Privacy Policy</Link>
                 </section>
