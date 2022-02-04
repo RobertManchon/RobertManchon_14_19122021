@@ -1,7 +1,7 @@
 import './MainNavBar.css';
 import { FaComments, FaCompress, FaBell, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logo from './../../assets/logo.png';
+import logo from './../../assets/logo.webp';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -27,7 +27,7 @@ const MainNavBar = (props) => {
                         </div>
                     </li>
                     <li className='navBarRightItem'>
-                        <div className='navBarRightLink' data-widget='fullscreen' role='button'>
+                        <div className='navBarRightLink' data-widget='fullscreen' role='button'  aria-label="navigation right link">
                             <FaCompress className='navBarIcon'/>
                         </div>
                     </li>

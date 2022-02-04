@@ -13,18 +13,20 @@
 .sideBar.showSideBar {
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
+    border-bottom-right-radius: .625rem;
+    border-top-right-radius: .625rem;
     bottom: 0;
-    box-shadow: .3125rem .3125rem .625rem #0000002e;
+    box-shadow: .2125rem .2125rem .625rem #0000002e;
     display: flex;
     flex-direction: column;
-    height: calc(100vh- 5rem - 0rem);
+    height: 100%;
     justify-content: space-evenly;
     left: 0;
     overflow: hidden;
     padding-top: 2rem;
     position: relative;
-    top: 3.4rem;
-    width: 15%;
+    top: 1rem;
+    width: 60%;
     z-index: 4200;
 }
 

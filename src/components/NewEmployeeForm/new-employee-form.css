@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 2rem;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+.address {
+    margin-top: 10px;
+    width: 95%;
+}
+
+.address input {
+    width: 95%;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.submit-btn {
+    width:  20%;
+    margin: 2rem 0;
+    padding: 10px;
+    color: #fff;
+    background-color: #000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 3rem;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+    .container {
+        width: 90%;
+    }
+}

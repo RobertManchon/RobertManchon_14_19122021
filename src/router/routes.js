@@ -1,6 +1,6 @@
-import NewEmployee from './../pages/NewEmployee';
-import EmployeeList from '../pages/EmployeeList/EmployeeList';
-import Error from './../pages/Error/Error';
+import NewEmployee from 'pages/NewEmployee';
+import EmployeeList from 'pages/EmployeeList/EmployeeList';
+import Error from 'pages/Error/Error';
 
 export const routes = [
     {
@@ -14,7 +14,7 @@ export const routes = [
         component: EmployeeList
     },
     {
-        path: '*',
+        path: '/*',
         exact: false,
         component: Error
     },

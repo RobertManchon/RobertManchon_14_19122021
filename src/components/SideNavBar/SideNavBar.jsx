@@ -1,10 +1,10 @@
 import './SideNavBar.css';
 import { FaUserPlus, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logoDark from './../../assets/logoDark.png';
+import logoDark from './../../assets/logoDark.webp';
 import PropTypes from 'prop-types';
 import React from 'react';
-import user from './../../assets/user.png';
+import user from './../../assets/user.webp';
 
 const SideNavBar = (props) => {
     return (

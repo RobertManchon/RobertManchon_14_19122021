@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import MainNavBar from './../../components/MainNavBar/MainNavBar';
-import SideNavBar from './../../components/SideNavBar/SideNavBar';
+import React, { useState, Suspense } from 'react';
+
+const MainNavBar = React.lazy(() => import('./../../components/MainNavBar/MainNavBar'));
+const SideNavBar = React.lazy(() => import('./../../components/SideNavBar/SideNavBar'));
 
 const Nav = () => {
     const [displaySideMenu, setDisplaySideMenu] = useState(false);
@@ -17,8 +18,12 @@ const Nav = () => {
     
     return (
         <>
-            <MainNavBar toggle={toggle} />
-            <SideNavBar showSideBar={displaySideMenu} toggle={toggle} />
+            <Suspense fallback={<div>Loading...</div>}>
+                <MainNavBar toggle={toggle} />
+            </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+                <SideNavBar showSideBar={displaySideMenu} toggle={toggle} />
+            </Suspense>
         </>
     );
 };
