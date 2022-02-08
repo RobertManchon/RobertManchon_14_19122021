@@ -87,10 +87,10 @@ const NewEmployeeForm = (props) => {
                 <label htmlFor="last-name">Last Name</label>
                 <input type="text" aria-label="last name" name="last-name" id="last-name" onBlur={e => fillForm(e, setLastName)}/>
 
-                <label htmlFor="date-of-birth" aria-label="date of birth">Date of Birth</label>
-                <DateSelector name="date-of-birth" aria-label="date of birth" onChange={(date) => handleDateChange(date, setDob, setInitialDob)} selected={initialDob}/>
+                <label htmlFor="date-of-birth" >Date of Birth</label>
+                <DateSelector name="date-of-birth"  onChange={(date) => handleDateChange(date, setDob, setInitialDob)} selected={initialDob}/>
 
-                <label htmlFor="start-date">Start Date</label>
+                <label htmlFor="start-date" >Start Date</label>
                 <DateSelector name="start-date" aria-label="start date" onChange={(date) => handleDateChange(date, setStartDate, setInitialStartDate)} selected={initialStartDate} />
 
                 <fieldset className="address">
@@ -103,14 +103,14 @@ const NewEmployeeForm = (props) => {
                     <input id="city" type="text" aria-label="city" name="city" onBlur={e => fillForm(e, setCity)}/>
 
                     <label htmlFor="state">State</label>
-                    <SelectForm name="state" data={stateNames} value={stateName} onChange={e => fillForm(e, setStateName)}/>
+                    <SelectForm name="state" aria-label="state" data={stateNames} value={stateName} onChange={e => fillForm(e, setStateName)}/>
 
                     <label htmlFor="zip-code">Zip Code</label>
                     <input id="zip-code" type="number" aria-label="zip code" name="zip-code" onBlur={e => fillForm(e, setZipCode)}/>
                 </fieldset>
 
                 <label htmlFor="department">Department</label>
-                <SelectForm name="department" data={departments} value={department} onChange={e => fillForm(e, setDepartment)}/>
+                <SelectForm name="department" aria-label="department" data={departments} value={department} onChange={e => fillForm(e, setDepartment)}/>
                 <span className='errorMessage'>{errorMessage}</span>
             </form>
 

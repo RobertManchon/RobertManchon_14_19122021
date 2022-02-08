@@ -2,6 +2,11 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import MUIDataTable from "mui-datatables";
 
+/**
+ *
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const EmployeeDataTable = () => {
 
 	const columns = ["First Name", "Last Name", "Date of Birth", "Start Date", "Street", "City", "State", "Zip Code", "Department"];

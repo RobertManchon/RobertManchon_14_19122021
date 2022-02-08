@@ -2,7 +2,7 @@ const initialState = {
 	employees: [],
 }
 
-export default function employees (state = initialState, action) {
+const employees = (state = initialState, action) => {
 	switch (action.type) {
 		case "ADD_EMPLOYEE":
 			return {
@@ -12,3 +12,5 @@ export default function employees (state = initialState, action) {
 			return state;
 	}
 }
+
+export default employees;

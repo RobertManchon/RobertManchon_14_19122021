@@ -10,12 +10,16 @@ const middleware = [thunk];
 
 //const persistedReducer = persistReducer(persistConfig, rootReducer);
 
+/**
+ *
+ * @type {Store<EmptyObject & PersistPartial, AnyAction> & Store<S, A> & {dispatch: ThunkDispatch<any, undefined, AnyAction>}}
+ */
 const store = createStore(
 	rootReducer,
 	initialState,
 	compose(
-		applyMiddleware(...middleware),
-    	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+		applyMiddleware(...middleware)
+    	 ,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 	)
 );
 

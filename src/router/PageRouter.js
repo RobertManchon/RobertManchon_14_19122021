@@ -1,12 +1,16 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { routes } from './routes';
-import Nav from './../components/Nav/Nav';
 
+/**
+ *
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const PageRouter = () => {
 
 	return (
 		<Router>
-			<Nav />
+
 			<Switch>
 				{routes.map((route, i) => (
 					<Route
